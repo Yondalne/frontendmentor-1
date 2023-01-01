@@ -10,27 +10,108 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #F3EAE3;
+    }
+    
+    .container .card {
+      background-color: white;
+      display: grid;
+      width: 39vw;
+      grid-template-columns: 45% 1fr;
+      grid-template-rows: 50vh;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .container .card .card-img {
+      background-image: url("images/image-product-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .container .card .card-content {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .container .card .card-content > h4 {
+      letter-spacing: 8px;
+      font-size: 14px;
+      color: #B1B2B5;
+    }
+
+    .container .card .card-content > h2 {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bolder;
+    }
+
+    .container .card .card-content > p {
+      line-height: 2rem;
+      font-size: 17px;
+    }
+
+    .container .card .card-content .card-price {
+      display: flex;
+    }
+
+    .container .card .card-content .card-price > h2 {
+      color: #3D8168;
+      font-size: 35px;
+      font-weight: bolder;
+    } 
+
   </style>
 </head>
 <body>
 
-  Preview
+  <div class="container">
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <h4>PERFUME</h4>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+        
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        
+        <div class="card-price">
+          <h2>$149.99</h2>
+          <p><del>$169.99</del></p>
+        </div>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
+        <a href="#"><img src="./images/icon-cart.svg" alt=""> <span>Add to cart</span></a>
+      </div>
+    </div>
+  </div>
+  
 
   Add to Cart
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Yondalne">Ben Ali Cherif / Yondaine</a>.
   </div>
 </body>
 </html>
