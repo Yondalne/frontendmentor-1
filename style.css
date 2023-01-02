@@ -5,6 +5,37 @@
     src: url("/fonts/gabriela-alt-bold.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "Grobek";
+    src: url("/fonts/Grobek-Regular.woff") format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Grobek";
+    src: url("/fonts/Grobek-Black.woff") format("woff");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Grobek";
+    src: url("/fonts/Grobek-Bold.woff") format("woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Grobek";
+    src: url("/fonts/Grobek-Light.woff") format("woff");
+    font-weight: light;
+}
+@font-face {
+    font-family: "Grobek";
+    src: url("/fonts/Grobek-Thin.woff") format("woff");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Grobek";
+    src: url("/fonts/Grobek-Medium.woff") format("woff");
+    font-weight: medium;
+}
+
 body {
     background-color: hsl(30, 38%, 92%);
 }
