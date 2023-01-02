@@ -167,6 +167,7 @@ a {
 
 .attribution a {
     color: white;
+    margin-left: 3px;
 }
 
 .attribution a:hover {
