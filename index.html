@@ -54,9 +54,10 @@
     .container .card {
       background-color: white;
       display: grid;
-      width: 39vw;
+      width: 700px;
+      height: 490px;
       grid-template-columns: 45% 1fr;
-      grid-template-rows: 50vh;
+      grid-template-rows: 100%;
       border: none;
       border-radius: 12px;
       overflow: hidden;
@@ -91,7 +92,7 @@
     }
 
     .container .card .card-content > p {
-      line-height: 2rem;
+      line-height: 1.6rem;
       font-size: 15px;
       color: rgba(0, 0, 0, .6);
       font-family: "Ubuntu";
@@ -134,6 +135,56 @@
       background-color: #1A4031;
     }
 
+    .attribution {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      gap: 30px;
+      text-align: center;
+      background-color: #3D8168;
+      font-family: "Ubuntu";
+      font-weight: bolder;
+      padding: 10px;
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .attribution a {
+      color: white;
+    }
+    
+    .attribution a:hover {
+      text-decoration: underline;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .container .card {
+        width: 90vw;
+        height: 90vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 1fr;
+      }
+      
+      .container .card .card-img {
+        background-image: url("images/image-product-mobile.jpg");
+      }
+      
+      .container .card .card-content > h4 {
+        font-size: 12px;
+      }
+
+      .container .card .card-content > h2 {
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -159,13 +210,14 @@
       </div>
     </div>
   </div>
-  
-
-  Add to Cart
-  
+    
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Yondalne">Ben Ali Cherif / Yondaine</a>.
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    </p>
+    <p>
+      Coded by <a href="https://github.com/Yondalne">Ben Ali Cherif / Yondaine</a>.
+    </p>
   </div>
 </body>
 </html>
