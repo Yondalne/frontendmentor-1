@@ -15,5 +15,5 @@ Your users should be able to:
 ## Result
 
 ![Desktop result preview](./design/desktop-result.jpg)
-![Mobile result preview](./design/Mobile-result.jpg)
+![Mobile result preview](./design/mobile-result.jpg)
 
