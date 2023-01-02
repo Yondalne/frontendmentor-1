@@ -10,6 +10,27 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+      font-family: "Grobek";
+      src: url("/fonts/Grobek-Regular.ttf") format("ttf"),
+             url("/fonts/Grobek-Black.ttf") format("ttf")
+             url("/fonts/Grobek-Bold.ttf") format("ttf")
+             url("/fonts/Grobek-Light.ttf") format("ttf")
+             url("/fonts/Grobek-Medium.ttf") format("ttf")
+             url("/fonts/Grobek-Thin.ttf") format("ttf");
+    }
+    
+    @font-face {
+      font-family: "Gabriela Alt";
+      src: url("/fonts/gabriela-alt-bold.otf") format("otf");
+    }
+    
+    @font-face {
+      font-family: "Renos Rough";
+      src: url("/fonts/RenosRough-Regular.ttf") format("ttf"),
+            url("/fonts/renos-rough-black.ttf") format("ttf");
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -18,6 +39,7 @@
 
     a {
       text-decoration: none;
+      color: black;
     }
 
     .container {
@@ -57,21 +79,28 @@
       letter-spacing: 8px;
       font-size: 14px;
       color: #B1B2B5;
+      font-family: "Renos Rough";
+      font-weight: normal;
     }
 
     .container .card .card-content > h2 {
       font-size: 40px;
       line-height: 40px;
       font-weight: bolder;
+      font-family: "Grobek";
     }
 
     .container .card .card-content > p {
       line-height: 2rem;
-      font-size: 17px;
+      font-size: 15px;
+      color: rgba(0, 0, 0, .6);
+      font-family: "Ubuntu";
     }
 
     .container .card .card-content .card-price {
       display: flex;
+      align-items: center;
+      font-family: "Gabriela Alt";
     }
 
     .container .card .card-content .card-price > h2 {
@@ -79,6 +108,31 @@
       font-size: 35px;
       font-weight: bolder;
     } 
+    
+    .container .card .card-content .card-price > p {
+      margin-left: 20px;
+      color: rgba(0, 0, 0, .6);
+      font-weight: bolder;
+      font-size: 15px;
+    }
+    
+    .container .card .card-content .card-button {
+      display: block;
+      width: 100%;
+      background-color: #3D8168;
+      color: white;
+      font-family: "Ubuntu";
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+      font-size: medium;
+      border-radius: 12px;
+      transition: all .2s;
+    }
+
+    .container .card .card-content .card-button:hover {
+      background-color: #1A4031;
+    }
 
   </style>
 </head>
@@ -101,7 +155,7 @@
           <p><del>$169.99</del></p>
         </div>
 
-        <a href="#"><img src="./images/icon-cart.svg" alt=""> <span>Add to cart</span></a>
+        <a href="#" class="card-button"><img src="./images/icon-cart.svg" alt=""> <span>Add to cart</span></a>
       </div>
     </div>
   </div>
