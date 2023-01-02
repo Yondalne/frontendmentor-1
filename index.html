@@ -117,7 +117,9 @@
     }
     
     .container .card .card-content .card-button {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       background-color: #3D8168;
       color: white;
@@ -128,6 +130,10 @@
       font-size: medium;
       border-radius: 12px;
       transition: all .2s;
+    }
+    
+    .container .card .card-content .card-button span {
+      margin-left: 10px;
     }
 
     .container .card .card-content .card-button:hover {
