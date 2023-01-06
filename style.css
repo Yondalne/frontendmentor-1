@@ -86,14 +86,14 @@ a {
 
 .container .card .card-content > h4 {
     letter-spacing: 8px;
-    font-size: 14px;
+    font-size: .8rem;
     color: #B1B2B5;
     font-family: "Montserrat";
     font-weight: 700;
 }
 
 .container .card .card-content > h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 40px;
     font-weight: bolder;
     color: hsl(212, 21%, 14%);
@@ -115,7 +115,7 @@ a {
 
 .container .card .card-content .card-price > h2 {
     color: hsl(158, 36%, 37%);
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: bolder;
 } 
 
@@ -123,7 +123,7 @@ a {
     margin-left: 20px;
     color: hsl(228, 12%, 48%);
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .container .card .card-content .card-button {
@@ -187,17 +187,17 @@ a {
     }
     
     .container .card .card-content > h4 {
-        font-size: 12px;
+        font-size: .8rem;
         font-weight: 500;
     }
 
     .container .card .card-content > h2 {
-        font-size: 30px;
+        font-size: 2rem;
         line-height: 30px;
     }
 
     .attribution {
-        font-size: 11px;
+        font-size: .6rem;
         padding: 10px;
     }
 }
